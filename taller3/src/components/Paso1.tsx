@@ -1,11 +1,14 @@
+import { useNavigate } from "react-router-dom";
 import React from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
 import { Form, Button } from "react-bootstrap";
+import { Navigate } from "react-router-dom";
 
 
 const Paso1 = () =>{
 
+    const navigate = useNavigate(); // Declarar para ausar el navigate
     const validacionesPaso1= Yup.object({
         nombre: Yup.string().required("El nombre es requerido"),
         apellido: Yup.string().required("El telefono es requerido"),
@@ -21,8 +24,7 @@ const Paso1 = () =>{
             telefono: "",
         },
         validationSchema: validacionesPaso1,
-        onSubmit: (values) => { console.log(values);
-         }
+        onSubmit: () => { navigate("/paso2") } //Cambiar al siguiente paso(pagina)
     });
 
 
@@ -37,7 +39,7 @@ const Paso1 = () =>{
                     type="text" 
                     value={formik.values.nombre}
                     onChange= {formik.handleChange}
-                    onBlur={formik.handleBlur} //Actualziar pobjeto touched
+                    onBlur={formik.handleBlur} //Actualziar pobjeto touched para validar el input
                     placeholder="Ingrese su nombre"
                     isInvalid={!!formik.errors.nombre && formik.touched.nombre } //!! Doble negacion
                     />
