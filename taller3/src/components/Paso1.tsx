@@ -111,7 +111,7 @@ const Paso1 = () =>{
                     <Form.Label>Telefóno:</Form.Label>
                         <Form.Control 
                         name="telefono"
-                        type="text" 
+                        type="number" 
                         value= {formik.values.telefono}
                         onChange= {formik.handleChange}
                         onBlur={formik.handleBlur}
