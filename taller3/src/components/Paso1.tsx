@@ -59,7 +59,7 @@ const Paso1 = () =>{
                 <Form onSubmit={formik.handleSubmit}>
 
                     <Form.Group controlId="nombre">
-                        <h3>Ingrese todos datos</h3>
+                        <h3>Ingrese todos los datos</h3>
                         <Form.Label>Nombre:</Form.Label>
                         <Form.Control 
                         name="nombre"
