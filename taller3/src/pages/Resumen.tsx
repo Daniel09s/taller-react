@@ -41,12 +41,14 @@ const Resumen = ()=>{
                     alert("Datos enviados")
                     navigate("/finapp")
                 }}
+                style={{padding: '5px', marginRight: '5px'}}
                 >Enviar Datos
                 </button>
 
                 <button className="btn btn-primary text-center" onClick={ ()=>{
                     navigate("/paso1")
                 }}
+                style={{padding: '5px'}}
                 >Modificar Datos
                 </button>
 
