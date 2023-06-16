@@ -39,7 +39,7 @@ const Paso2 = () => {
 
     return (
         <div>
-                <Navbar bg="red" expand="lg">
+                {/*<Navbar bg="red" expand="lg">
                     <Container>
                         <Navbar.Toggle aria-controls="basic-navbar-nav" />
                         <Navbar.Collapse id="basic-navbar-nav">
@@ -51,7 +51,7 @@ const Paso2 = () => {
                         </Nav>
                         </Navbar.Collapse>
                     </Container>
-                </Navbar>
+    </Navbar>*/}
 
                 <h2 style={{textAlign: 'center', marginBottom: '10px'}}>Paso 2. Formación académica</h2>
             <Card style={{ width: '30rem', margin: '0 auto', padding: '10px', color: 'darkblack', fontFamily: 'arial', boxShadow: '5px 5px 5px black'}}>
